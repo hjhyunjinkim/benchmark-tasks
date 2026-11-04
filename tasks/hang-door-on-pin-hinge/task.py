@@ -1,8 +1,8 @@
-"""On the station table, between the arms: a fixed steel hinge post (a leaf 9 cm tall with three knuckles: square
-rings with a 16 mm hole, 12 mm tall, stacked 15 mm apart on a vertical axis). In front of the right arm, a small door
-(18 x 12 cm, 1.2 cm thick, 0.3 kg, white) stands on edge in a low holder; its hinge edge carries two knuckles that fit
-between the post's. In front of the left arm, a steel hinge pin (10 mm across, 7.5 cm long, with a 22 mm head)
-stands in a holder. The goal is to hang the door: hold its knuckles between the post's knuckles, lined up, and drop the
+"""On the station table, between the arms: a fixed steel hinge post (a leaf 8.7 cm tall with three knuckles: square
+rings with an 18 mm hole, 12 mm tall, 18 mm apart on a vertical axis). In front of the right arm, a small door
+(12 x 8 cm, 1.2 cm thick, 0.2 kg, white) stands on edge in a low holder; its hinge edge carries two knuckles that fit
+between the post's. In front of the left arm, a hollow steel hinge pin (10 mm across, 8.5 cm long, with a 22 mm head)
+stands in a socket. The goal is to hang the door: hold its knuckles between the post's knuckles, lined up, and drop the
 pin down through all five, so the door hangs on the pin.
 
 Run it:  inspect-robots run --embodiment yam_arena -E task=task.py \\

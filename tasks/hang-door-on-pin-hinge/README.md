@@ -1,8 +1,8 @@
 # Hang a door on a pin hinge
 
 A fixed steel hinge post stands between the arms: a leaf with three square knuckles (18 mm holes, 12 mm tall, 18 mm
-apart on a vertical axis). In front of the right arm, a small door (12 x 8 cm, 1.2 cm thick, 0.2 kg) stands on edge in a
-low holder, two knuckles on its hinge edge. In front of the left arm, a steel hinge pin (10 mm shaft with a rounded nose,
+apart on a vertical axis). In front of the right arm, a small solid PVC door (12 x 8 cm, 1.2 cm thick, 0.2 kg) stands on edge in a
+low holder, two knuckles on its hinge edge. In front of the left arm, a hollow steel hinge pin (10 mm shaft with a rounded nose,
 8.5 cm long, 22 mm head) stands in a socket. The robot must hold the door with its knuckles between the post's, lined
 up on the axis, and drop the pin down through all five knuckles so the door hangs on it.
 
@@ -91,5 +91,5 @@ station's grippy contact material. Nothing is deformable.
 ## Real-world build
 
 A steel lift-off hinge leaf with three knuckles, screwed upright to a block clamped to the table; a 12 x 8 cm, 12 mm
-plywood door with the mating two-knuckle leaf; the hinge's own pin, or a 10 mm steel rod with a rounded end and a
+solid PVC door with the mating two-knuckle leaf; the hinge's own pin, or a 10 mm steel tube with a rounded end and a
 collar. The holders are two blocks taped either side of the door's lower edge and a drilled block for the pin.
