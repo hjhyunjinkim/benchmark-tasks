@@ -1,6 +1,6 @@
 # Feed a press blank under a guard raised no more than 8 cm
 
-A small press bed sits under a fixed mesh hood on the station table. The only way in is under a heavy red guard that
+A small press bed sits under a fixed mesh hood on the station table. The only way in is under a red polycarbonate guard that
 slides in two channels and falls shut when let go. A flat aluminium blank lies in the infeed lane, and a wooden push
 stick lies on the table. The robot must raise the guard no more than 8 cm, push the blank in to the back stop with the
 stick, take the stick out, and lower the guard gently.
@@ -57,16 +57,18 @@ fingers shifts the stick 4 mm across the lane; the demo allows for both (`PUSH_L
 Evaluated every control step; the score at the end of the episode counts. The scorer keeps two records through the trial:
 the highest the guard's lower edge has been above the table, and the fastest the guard has moved downward.
 
+- 0: the guard's lower edge ever rose more than 13 cm, which takes it out of its channels.
+
 - 1.0 (success, held for 1 s): the blank lies flat with its front edge within 5 mm of the back stop; the guard's lower
   edge is within 3 mm of the table; the stick is wholly left of the guard; the guard was never raised over 8 cm and
   never moved down faster than 0.3 m/s; blank and guard are still.
 - 0.75: the blank and guard end that way, with the guard raised at most 12 cm and never moving down faster than 0.3 m/s.
-- 0.5: they end that way, but the guard was raised more than 12 cm or moved down faster than 0.3 m/s.
+- 0.5: they end that way, but the guard was raised more than 12 cm, up to 13 cm, or moved down faster than 0.3 m/s.
 - 0.25: the blank is wholly right of the guard, but those end conditions aren't met.
 - Otherwise 0.
 
-In a real trial: a side video against 8 cm and 12 cm marks on a card beside the guard gives the raise; a guard let go from
-4 cm or higher falls faster than 0.3 m/s; a tape measure from the back stop checks the blank.
+In a real trial: a side video at 30 frames a second against 8, 12 and 13 cm marks on a card beside the guard gives the
+raise; 0.3 m/s is 1 cm between frames; a tape measure from the back stop checks the blank.
 
 ## Runtime and seeds
 
@@ -83,6 +85,6 @@ Nothing is deformable.
 
 ## Real-world build
 
-A 14 x 16 cm steel plate (2 cm thick, or lighter with 0.5 kg added) in two 13 cm channels; a hood of sheet metal and bars
+A 14 x 16 cm polycarbonate plate, 2 cm thick, in two 13 cm steel channels; a hood of sheet metal and bars
 with 15 mm gaps; two low guide strips; a 6 x 10 x 2 cm aluminium block; a 2 x 3 x 20 cm wooden stick. Keep the hood fixed
 to the table, and keep hands clear of the guard when it is raised.

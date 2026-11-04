@@ -1,5 +1,5 @@
 """On the station table, between the arms: a small press bed under a fixed mesh hood. The only way in is from the left,
-under a heavy steel guard that slides up and down in two channels and falls shut when let go. A flat aluminium blank
+under a polycarbonate guard that slides up and down in two channels and falls shut when let go. A flat aluminium blank
 lies on the infeed lane left of the guard, and a wooden push stick lies on the table in front of the left arm. The goal
 is to feed the blank: raise the guard no more than 8 cm, push the blank in to the back stop with the stick, take the
 stick out, and lower the guard gently.
@@ -70,6 +70,7 @@ def _machine():
 OBJECTS = [GUARD, BLANK, STICK, *_machine()]
 
 MAX_OPEN, SOFT_OPEN = 0.08, 0.12  # m the guard may be raised: for full score, and for 0.75
+OUT_OF_CHANNELS = 0.13  # m: raised this far, the guard has left its channels
 MAX_FALL = 0.3  # m/s: faster than this downward counts as the guard being dropped
 CLOSED = 0.003  # m: the guard's lower edge within this of the table
 AT_STOP = 0.005  # m: the blank's front edge within this of the back stop
@@ -118,7 +119,10 @@ def success(objects):
 
 def score(objects):
     """Partial credit (success scores 1.0): 0.75 if fed and closed with the guard raised 8 to 12 cm and never dropped; 0.5
-    if fed and closed outside those limits; 0.25 if the blank is wholly past the guard but not finished."""
+    if fed and closed outside those limits; 0.25 if the blank is wholly past the guard but not finished; 0 if the guard ever left its
+    channels."""
+    if WATCH.opened > OUT_OF_CHANNELS:
+        return 0.0
     if fed(objects) and closed(objects):
         return 0.75 if WATCH.opened <= SOFT_OPEN and WATCH.fell <= MAX_FALL else 0.5
     return 0.25 if objects["blank"].high[1] < GUARD_Y - GUARD_SIZE[1] / 2 else 0.0
