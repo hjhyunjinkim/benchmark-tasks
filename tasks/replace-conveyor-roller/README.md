@@ -1,8 +1,8 @@
 # Replace a worn conveyor roller
 
 Between the arms stands a short gravity-conveyor section: two steel side rails 30 cm apart with open U-slots in their
-tops, holding two drop-in rollers (4.8 cm across, 26 cm long, on 12 mm axle stubs), a grey one and a worn red one. A new
-grey roller rests in a spare stand in front of the rails, and a green mat lies on the table past them. The robot must
+tops, holding two hollow aluminium drop-in rollers (4.8 cm across, 26 cm long, on 12 mm axle stubs), a grey one and a worn red one. A new
+grey roller rests in a spare stand in front of the rails, and a green rubber mat lies on the table past them. The robot must
 lift the red roller out, lay it on the mat, and drop the new roller into the red roller's slots, leaving the grey roller
 where it is.
 
@@ -85,5 +85,5 @@ round where real drop-in rollers often have hex ends. Nothing is deformable.
 ## Real-world build
 
 Two 17 cm lengths of steel or aluminium angle with 22 mm notches cut in their top edges, clamped 30 cm apart; three
-light drop-in conveyor rollers (48 mm, about 26 cm between the frames, 12 mm axles), one painted red; two short notched
-blocks for the spare stand; and a green mat.
+light hollow aluminium drop-in conveyor rollers (48 mm, about 26 cm between the frames, 12 mm axles, 0.4 kg), one painted
+red; two short notched steel posts for the spare stand; and a 1 mm green rubber mat.
