@@ -1,6 +1,6 @@
 # Assemble a slotted partition
 
-Three slotted wooden slats (16 mm thick, 8 cm tall) stand on edge in low racks on the station table: a long slat (30 cm)
+Three slotted rigid foam-board slats (16 mm thick, 8 cm tall) stand on edge in low racks on the station table: a long slat (30 cm)
 with two slots cut halfway down from its top edge, 18 cm apart, and two short slats (20 cm), each with one slot cut
 halfway up from its bottom edge at its middle. The robot must stand the long slat on the white line and slide each short
 slat down across it so the slots interlock, the slats' top edges flush.
@@ -83,10 +83,11 @@ The layout is fixed (`-E object_jitter=0`); there are no seeds to choose. The de
 ## Fidelity
 
 Each slat is one rigid body built from boxes, its slots real gaps; 16 mm slats in 24 mm slots leave 4 mm of play each
-way, looser than a snug real partition. The racks and the white line are fixed boxes. Wood grain and friction in the
-slots aren't modelled beyond the station's default contact material. Nothing is deformable.
+way, looser than a snug real partition. The racks and the white line are fixed boxes. Surface friction in the slots isn't
+modelled beyond the station's default contact material, and each slat has the same 40 g, where a real short slat is a
+little lighter. Nothing is deformable.
 
 ## Real-world build
 
-Three 16 x 80 mm pine or MDF boards (one 30 cm, two 20 cm) with 24 mm slots cut halfway through, two blocks taped either
+Three 16 x 80 mm rigid foam boards (one 30 cm, two 20 cm) with 24 mm slots cut halfway through, two blocks taped either
 side of each board as a rack, and a strip of white tape on the table.

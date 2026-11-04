@@ -1,4 +1,4 @@
-"""On the station table: three slotted wooden partition slats (16 mm thick, 8 cm tall), each standing on edge in a low
+"""On the station table: three slotted foam-board partition slats (16 mm thick, 8 cm tall), each standing on edge in a low
 grey rack. A long slat (30 cm) has two slots cut halfway down from its top edge, 18 cm apart; two short slats (20 cm)
 each have one slot cut halfway up from the bottom edge at their middle. The goal is to build a partition: stand the long
 slat on the table at the marked spot, and slide each short slat down across it so the slots interlock, the slats'
